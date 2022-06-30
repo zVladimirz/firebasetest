@@ -3,14 +3,14 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://zvladimirz.github.io/goit-js-hw-11/",
+  "homepage": "https://zvladimirz.github.io/firebasetest/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-11/"
+    "build": "parcel build src/*.html --public-url /firebasetest/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zVladimirz/goit-js-hw-11.git"
+    "url": "git+https://github.com/zVladimirz/firebasetest.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
