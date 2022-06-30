@@ -41,11 +41,11 @@ class PixabayAPI {
   }
 
   incrementPage() {
-    this.page += 1;
+    this.page += 2;
   }
 
   resetPage() {
-    this.page = 1;
+    this.page = 2;
   }
 
   get query() {
