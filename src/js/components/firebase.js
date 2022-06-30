@@ -29,3 +29,13 @@ const firebaseConfig = {
 // Initialize Firebase
 
 const app = initializeApp(firebaseConfig);
+
+async function  registration(email, password) {
+  try {
+      const data = await firebase.auth().createUserWithEmailAndPassword(email, password)
+      console.log(data.user.uid)
+  } catch (error) {
+      console.log(error.message)
+      throw error
+  }
+}
