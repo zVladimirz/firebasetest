@@ -550,7 +550,10 @@ function getMovieInfo(id) {
     const URL = `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=en-US`;
     fetchFromBackend(URL, createModal);
 }
-getGenreList();
+async function startfilm() {
+    await getGenreList();
+    await getPopularMovies();
+}
 function renderMoviesCardsMarkup(obj) {
     const array = obj.data.results;
     const markup = array.map(({ id , poster_path , genre_ids , original_title , release_date  })=>{
@@ -576,7 +579,7 @@ function renderMoviesCardsMarkup(obj) {
         });
     });
 }
-getPopularMovies();
+startfilm();
 function createModal(data) {
     console.log(data.data);
     const { poster_path , title , genres , id , original_title , overview , popularity , release_date , vote_average , vote_count ,  } = data.data;
